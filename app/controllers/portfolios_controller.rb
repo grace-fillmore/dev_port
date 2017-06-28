@@ -7,10 +7,6 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.new
   end
   
-  def angular
-    @angular_portfolio_items = Portfolio.angular
-  end
-  
   def create
     @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
@@ -58,6 +54,10 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
+  end
+    
+  def angular
+    @angular_portfolio_items = Portfolio.angular
   end
 
 end
