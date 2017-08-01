@@ -157,6 +157,23 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 12rem;
+    width: 55rem;
   }
+}
+
+/*
+ * Custom Styles
+ */
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
 }
